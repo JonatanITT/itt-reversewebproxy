@@ -1,0 +1,9 @@
+<VirtualHost *:10007>
+        #ELKWeb Interfaces
+        ServerName jonatanelk.com
+
+        ProxyPreserveHost on
+        ProxyPass "/" "http://172.16.1.7:80/"
+        ProxyPassReverse "/" "http://172.16.1.7:80/"
+
+</VirtualHost>

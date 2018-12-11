@@ -1,0 +1,9 @@
+<VirtualHost *:10006>
+        #NagiOS
+        ServerName jonatannagios.com
+
+        ProxyPreserveHost on
+        ProxyPass "/" "http://172.16.1.6:80/"
+        ProxyPassReverse "/" "http://172.16.1.6:80/"
+
+</VirtualHost>

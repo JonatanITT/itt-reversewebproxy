@@ -1,0 +1,7 @@
+<VirtualHost *:10005>
+        #LibreWebserver
+        ServerName jonatanlibrenms.com
+        ProxyPass "/" "http://172.16.1.5:81/"
+        ProxyPassReverse "/" "http://172.16.1.5:81/"
+
+</VirtualHost>
