@@ -2,20 +2,22 @@
   "builders": [
 		{
 			"type": "vmware-vmx",
-			"source_path": "C:\users\marcusWitt\documents\virtual machines\tester\tester.vmdk",
-			"output_directory": "D:/virtuals/outputconf",
+			"source_path": "C:/Users/MarcusWitt/Documents/Virtual Machines/Ubuntu 64-bit/Ubuntu 64-bit.vmx",
+			"output_directory": "C://users/marcusWitt/documents/output_directory",
 			"ssh_username": "jonatan",
 			"ssh_password": "jonatan",
+      "boot_wait": "30s",
 			"shutdown_command": "shutdown -P now"
 		}
 	],
 	"Provisioners": [
         {
+            "execute_command": "echo 'jonatan' | sudo -S sh -c /home/jonatan/itt-reversewebproxy/bashscripts",
             "type": "shell",
             "inline": [
                 "git clone https://github.com/JonatanITT/itt-reversewebproxy.git",
                 "cd /home/jonatan/itt-reversewebproxy/bashscripts",
-                "./runme.sh"
+                "sudo ./runme.sh"
             ]
         }
     ]
