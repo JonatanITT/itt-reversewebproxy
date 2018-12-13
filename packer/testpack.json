@@ -2,10 +2,10 @@
   "builders": [
 		{
 			"type": "vmware-vmx",
-			"source_path": "D:/virtuals/Ubuntu 64-bit.vmx",
+			"source_path": "C:\Users\MarcusWitt\Documents\Virtual Machines\tester\tester.vmdk",
 			"output_directory": "D:/virtuals/outputconf",
-			"ssh_username": "root",
-			"ssh_password": "eal113",
+			"ssh_username": "jonatan",
+			"ssh_password": "jonatan",
 			"shutdown_command": "shutdown -P now"
 		}
 	],
@@ -13,8 +13,8 @@
         {
             "type": "shell",
             "inline": [
-                "git clone https://gitlab.com/ucl-itt-ss3/mailman.git",
-                "cd /home/adminjonatan/itt-reversewebproxy/bashscripts",
+                "git clone https://github.com/JonatanITT/itt-reversewebproxy.git",
+                "cd /home/jonatan/itt-reversewebproxy/bashscripts",
                 "./runme.sh"
             ]
         }
