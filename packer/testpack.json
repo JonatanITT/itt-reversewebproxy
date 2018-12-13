@@ -1,0 +1,22 @@
+{
+  "builders": [
+		{
+			"type": "vmware-vmx",
+			"source_path": "D:/virtuals/Ubuntu 64-bit.vmx",
+			"output_directory": "D:/virtuals/outputconf",
+			"ssh_username": "root",
+			"ssh_password": "eal113",
+			"shutdown_command": "shutdown -P now"
+		}
+	],
+	"Provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                "git clone https://gitlab.com/ucl-itt-ss3/mailman.git",
+                "cd /home/adminjonatan/itt-reversewebproxy/bashscripts",
+                "./runme.sh"
+            ]
+        }
+    ]
+  }
