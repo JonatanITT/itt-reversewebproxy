@@ -2,7 +2,7 @@
   "builders": [
 		{
 			"type": "vmware-vmx",
-			"source_path": "C:\Users\MarcusWitt\Documents\Virtual Machines\tester\tester.vmdk",
+			"source_path": "C:\users\marcusWitt\documents\virtual machines\tester\tester.vmdk",
 			"output_directory": "D:/virtuals/outputconf",
 			"ssh_username": "jonatan",
 			"ssh_password": "jonatan",
