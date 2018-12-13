@@ -2,8 +2,8 @@
   "builders": [
 		{
 			"type": "vmware-vmx",
-			"source_path": "C:/Users/MarcusWitt/Documents/Virtual Machines/Ubuntu 64-bit/Ubuntu 64-bit.vmx",
-			"output_directory": "C://users/marcusWitt/documents/output_directory",
+			"source_path": "C:<PathTo.vmxFile>/Ubuntu 64-bit.vmx",
+			"output_directory": "C:PathToOutput/output_directory",
 			"ssh_username": "jonatan",
 			"ssh_password": "jonatan",
       "boot_wait": "30s",
@@ -17,7 +17,7 @@
             "inline": [
                 "git clone https://github.com/JonatanITT/itt-reversewebproxy.git",
                 "cd /home/jonatan/itt-reversewebproxy/bashscripts",
-                "sudo ./runme.sh"
+                "./runme.sh"
             ]
         }
     ]
